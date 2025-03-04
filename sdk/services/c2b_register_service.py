@@ -1,7 +1,8 @@
 from sdk.api_client import APIClient
 from sdk.config import Config
 from sdk.models.transaction_model import C2BRequest, C2BResponse
-from sdk.utils.logger import logger  # Import the logger
+from sdk.utils.logger import logger
+from sdk.errors.base_error import C2BError
 
 class C2BService:
     def __init__(self):
@@ -14,7 +15,7 @@ class C2BService:
             "Accept": "application/json",
             "Content-Type": "application/json"
         }
-
+              
         try:
             logger.info("Initiating C2B payment...")
             response = self.client.post(endpoint, headers=headers, data=request)
@@ -27,6 +28,6 @@ class C2BService:
 
             return C2BResponse(**response["header"])
 
-        except Exception as e:
+        except C2BError as e:
             logger.exception("An error occurred while initiating C2B payment: %s", e)
             raise

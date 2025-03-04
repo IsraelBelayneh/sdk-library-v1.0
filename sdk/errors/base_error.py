@@ -29,3 +29,9 @@ class B2CError(PaymentError):
     Exception raised for Business-to-Customer (B2C) errors.
     """
     pass
+
+class STKPush(PaymentError):
+    """
+    Exception raised for STK-PUSH errors.
+    """
+    pass

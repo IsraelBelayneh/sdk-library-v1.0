@@ -17,4 +17,3 @@ class Config:
     GENERATE_TOKEN = os.getenv('GENERATE_TOKEN', 'default_generate_token')
     PAYOUT = os.getenv('PAYOUT', 'default_payout')
     STK_PUSH = os.getenv('STK_PUSH', 'default_stkpush')
-   

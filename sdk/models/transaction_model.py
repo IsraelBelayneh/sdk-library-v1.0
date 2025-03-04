@@ -23,12 +23,22 @@ class STKPushResponse(BaseModel):
     ResponseDescription: str
     CustomerMessage: str
 
-class C2BRequest(BaseModel):
-    ShortCode: str
-    ResponseType: str
-    CommandID: str
-    ConfirmationURL: str
-    ValidationURL: str
+class C2BRequest:
+    def __init__(self, ShortCode, ResponseType, CommandID, ConfirmationURL, ValidationURL):
+        self.ShortCode = ShortCode
+        self.ResponseType = ResponseType
+        self.CommandID = CommandID
+        self.ConfirmationURL = ConfirmationURL
+        self.ValidationURL = ValidationURL
+
+    def to_dict(self):
+        return {
+            'ShortCode': self.ShortCode,
+            'ResponseType': self.ResponseType,
+            'CommandID': self.CommandID,
+            'ConfirmationURL': self.ConfirmationURL,
+            'ValidationURL': self.ValidationURL
+        }
 
 class C2BResponse(BaseModel):
     responseCode: int

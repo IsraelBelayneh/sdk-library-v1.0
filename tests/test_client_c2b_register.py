@@ -5,8 +5,10 @@ import sys
 sys.path.append(r'D:\Personal\MPESA\sdk-library v1.0')
 from sdk.services.c2b_register_service import C2BService
 from sdk.models.transaction_model import C2BRequest, C2BResponse
+from sdk.SDK_EMPESA import SDKClient
+from sdk.config import Config
 
-class TestC2BService(unittest.TestCase):
+class TestC2BClient(unittest.TestCase):
     @patch('__main__.C2BService')  # Mock C2BService
     def test_initiate_c2b_payment(self, MockC2BService):
         # Prepare a valid C2B request
@@ -34,7 +36,6 @@ class TestC2BService(unittest.TestCase):
         })
 
     if __name__ == "__main__":
-        c2b_service = C2BService()
 
         # Prepare a valid C2B request
         request = C2BRequest(
@@ -45,5 +46,9 @@ class TestC2BService(unittest.TestCase):
             ValidationURL="https://www.myservice:8080/validation"
         )
 
-        c2b_service.initiate_c2b_payment(request.to_dict())
+        config = Config()
+        client = SDKClient(config)
+        client.make_c2b_registration(request)
+
+        # c2b_service.initiate_c2b_payment(request.to_dict())
         unittest.main()
