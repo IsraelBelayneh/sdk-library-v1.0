@@ -1,6 +1,7 @@
 import base64
-from ..api_client import APIClient
-from ..config import Config
+from sdk.api_client import APIClient
+from sdk.config import Config
+from sdk.utils.logger import logger  # Import the logger
 
 class Authentication:
     def __init__(self):
@@ -8,13 +9,28 @@ class Authentication:
 
     def get_access_token(self):
         endpoint = "/v1/token/generate?grant_type=client_credentials"
-        # credentials = f"{Config.API_KEY}:{Config.API_SECRET}"
+        
+        # Use bearer token directly for authorization
         credentials = f"{Config.BEARER_TOKEN}"
-        # encoded_credentials = base64.b64encode(credentials.encode()).decode()
+        
         headers = {
             "Authorization": f"Basic {credentials}",
             "Accept": "application/json",
             "Content-Type": "application/json"
         }
-        response = self.client.get(endpoint, headers=headers)
-        return response.get("access_token")
+
+        try:
+            logger.info("Requesting access token...")
+            response = self.client.get(endpoint, headers=headers)
+            access_token = response.get("access_token")
+
+            if access_token:
+                logger.info("Access token retrieved successfully.")
+            else:
+                logger.error("Failed to retrieve access token: %s", response)
+                
+            return access_token
+
+        except Exception as e:
+            logger.exception("An error occurred while retrieving the access token: %s", e)
+            raise

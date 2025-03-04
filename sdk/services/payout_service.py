@@ -1,6 +1,7 @@
 from sdk.api_client import APIClient
 from sdk.config import Config
 from sdk.models.transaction_model import PayoutRequest, PayoutResponse
+from sdk.utils.logger import logger  # Import the logger
 
 class PayoutService:
     def __init__(self):
@@ -13,6 +14,13 @@ class PayoutService:
             "Accept": "application/json",
             "Content-Type": "application/json"
         }
-        response = self.client.post(endpoint, headers=headers, data=request)
-        
-        return PayoutResponse(**response)
+
+        try:
+            logger.info("Initiating payout...")
+            response = self.client.post(endpoint, headers=headers, data=request)
+            logger.info("Payout initiated successfully.")
+            return PayoutResponse(**response)
+
+        except Exception as e:
+            logger.exception("An error occurred while initiating payout: %s", e)
+            raise

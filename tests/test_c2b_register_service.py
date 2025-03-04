@@ -3,7 +3,7 @@ from unittest.mock import patch
 import sys
 
 sys.path.append(r'D:\Personal\MPESA\sdk-library v1.0')
-from sdk.services.c2b_service import C2BService
+from sdk.services.c2b_register_service import C2BService
 from sdk.models.transaction_model import C2BRequest, C2BResponse
 
 class TestC2BService(unittest.TestCase):

@@ -31,10 +31,10 @@ class C2BRequest(BaseModel):
     ValidationURL: str
 
 class C2BResponse(BaseModel):
-    responseCode: int = Field(..., alias="responseCode")  # Should be an integer
-    responseMessage: str = Field(..., alias="responseMessage")
-    customerMessage: str = Field(..., alias="customerMessage")
-    timestamp: str = Field(..., alias="timestamp")
+    responseCode: int
+    responseMessage: str
+    customerMessage: str
+    timestamp: str
 
 class PayoutRequest(BaseModel):
     OriginatorConversationID: str

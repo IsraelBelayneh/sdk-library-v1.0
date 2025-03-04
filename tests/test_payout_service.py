@@ -98,7 +98,7 @@ class TestPayoutService(unittest.TestCase):
 
     # Prepare a valid C2B payment request
         request = PayoutRequest(
-            OriginatorConversationID="120",
+            OriginatorConversationID="1111",
             InitiatorName="apitest",
             SecurityCredential="QgrnKORWlO5uf0E4Tasik0LlktbgzKtdMuzEYYQF0qVV/Fel/zXhBFCviguqvklfEH+AxOUhhMId/mdGjYok3FQsk8lFCcoY+G6UpPkRgBxJjiaFnuA4G3gHJQ7gHTpZckPyLLD502SIcvWBP6X9sdGS3bJz0M8gNzrzSpj0ZN8k/4hFGdQX9V4owNx3kPL9aWj+RzkVslIxf/neGgSdoWa8wSQROK8iN7rG0CU5PMaaRWX+4oySruKOLMybRBzHUFVv9HIMXqYYMlepRJaFU5lU0LP3M9A7pdC7Kw/78kXe3jz3gNKZp752kyegI+BVtfN+W5Cr1YvEmRmvOF8zqw==",
             CommandID="BusinessPayment",

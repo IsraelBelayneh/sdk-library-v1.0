@@ -11,5 +11,7 @@ class Config:
     BASE_URL = os.getenv('BASE_URL', 'https://apisandbox.safaricom.et')
     TOKEN = os.getenv('TOKEN', 'default_token')
     BEARER_TOKEN = os.getenv('BEARER_TOKEN', 'default_bearer_token')
-    TIMEOUT = int(os.getenv('TIMEOUT', 30))
+    TIMEOUT = int(os.getenv('TIMEOUT', 30)) 
+    C2B_REGISTER = os.getenv('C2B_REGISTER', 'default_c2b_register')
     SECURITYCREDENTIAL = os.getenv('SECURITYCREDENTIAL', 'default_security_credential')
+   
