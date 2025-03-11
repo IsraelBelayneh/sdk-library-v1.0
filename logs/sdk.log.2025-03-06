@@ -1,0 +1,56 @@
+2025-03-06 18:09:07,500 - SDKLogger - INFO - Requesting access token...
+2025-03-06 18:09:07,504 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-06 18:09:08,128 - SDKLogger - INFO - Response Status Code: 200
+2025-03-06 18:09:08,129 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "Ks6Jugj8Gv1EKaNC9ZHVGJ7uGGI6",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-06 18:09:08,130 - SDKLogger - INFO - Access token retrieved successfully.
+2025-03-06 18:54:35,515 - SDKLogger - INFO - Requesting access token...
+2025-03-06 18:54:35,517 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-06 18:54:36,261 - SDKLogger - INFO - Response Status Code: 200
+2025-03-06 18:54:36,262 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "g2AYoVhoYW9pq4H3lpWj2aTubNrf",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-06 18:54:36,262 - SDKLogger - INFO - Access token retrieved successfully.
+2025-03-06 18:55:02,867 - SDKLogger - INFO - Initiating STK push...
+2025-03-06 18:55:02,869 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/mpesa/stkpush/v3/processrequest with params: {'json': {'MerchantRequestID': '1', 'BusinessShortCode': '1020', 'Password': '5U4knSD9jdCO1tptd6PA85AqBZ7aEMnzKnEhLvEDkE', 'Timestamp': '20220101120000', 'TransactionType': 'CustomerPayBillOnline', 'Amount': 10.0, 'PartyA': '251700404709', 'PartyB': '1020', 'PhoneNumber': '251700404709', 'TransactionDesc': 'Payment Reason', 'CallBackURL': 'https://www.myservice:8080/result', 'AccountReference': 'Partner Unique ID', 'ReferenceData': [{'Key': 'BundleName', 'Value': 'Monthly Unlimited Bundle'}, {'Key': 'BundleType', 'Value': 'Self'}, {'Key': 'TINNumber', 'Value': '89234093223'}]}, 'headers': {'Authorization': 'Bearer g2AYoVhoYW9pq4H3lpWj2aTubNrf', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-06 18:55:03,302 - SDKLogger - INFO - Response Status Code: 200
+2025-03-06 18:55:03,302 - SDKLogger - INFO - Response Content: {
+            "MerchantRequestID":"1",
+            "CheckoutRequestID":"ws_CO_060320251855023395861",
+            "ResponseCode": "SVC0403",
+            "ResponseDescription":"Forbidden request as the provided Password is incorrect for: uri=/api",
+            "CustomerMessage":"Forbidden request as the provided Password is incorrect"
+        }
+        
+2025-03-06 18:55:03,304 - SDKLogger - INFO - STK push initiated successfully.
+2025-03-06 19:19:04,948 - SDKLogger - INFO - Requesting access token...
+2025-03-06 19:19:04,950 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-06 19:19:05,899 - SDKLogger - INFO - Response Status Code: 200
+2025-03-06 19:19:05,900 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "YoVcrP3to2bmbSRp1nAy2TU5Ont8",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-06 19:19:05,901 - SDKLogger - INFO - Access token retrieved successfully.
+2025-03-06 21:13:47,657 - SDKLogger - INFO - Requesting access token...
+2025-03-06 21:13:47,658 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-06 21:13:48,774 - SDKLogger - INFO - Response Status Code: 200
+2025-03-06 21:13:48,774 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "QXILuMfDbOrVPA5GGmBLOefIRlRe",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-06 21:13:48,775 - SDKLogger - INFO - Access token retrieved successfully.

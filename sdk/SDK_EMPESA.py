@@ -51,7 +51,7 @@ class SDKClient:
             c2b_service = C2BService()
 
             # Initiate C2B payment
-            c2b_service.initiate_c2b_payment(request.to_dict())
+            c2b_service.initiate_c2b_payment(request)
         else:
             raise ValueError("Invalid request type. Expected C2BRequest.")
     

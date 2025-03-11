@@ -1,0 +1,119 @@
+2025-03-04 16:18:00,382 - SDKLogger - INFO - Initiating C2B payment...
+2025-03-04 16:18:00,829 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/v1/c2b-register-url/register?apikey=F4cAy9WimsSDGg3IrGnxH0pjP5fMIaKSHhLksrQeNS0FBMP0 with params: {'json': <sdk.models.transaction_model.C2BRequest object at 0x0000016482F8C530>, 'headers': {'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:21:09,510 - SDKLogger - INFO - Initiating C2B payment...
+2025-03-04 16:21:09,964 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/v1/c2b-register-url/register?apikey=F4cAy9WimsSDGg3IrGnxH0pjP5fMIaKSHhLksrQeNS0FBMP0 with params: {'json': {'ShortCode': '60023', 'ResponseType': 'Completed', 'CommandID': 'RegisterURL', 'ConfirmationURL': 'https://www.myservice:8080/confirmation', 'ValidationURL': 'https://www.myservice:8080/validation'}, 'headers': {'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:21:11,088 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:21:11,089 - SDKLogger - INFO - Response Content: 
+            {"header":{"responseCode":400,"responseMessage":"Shortcode already registered","customerMessage":"Shortcode already registered","timestamp":"2025-03-04T16:21:12.029"}}
+        
+2025-03-04 16:21:11,581 - SDKLogger - INFO - C2B payment initiated successfully.
+2025-03-04 16:27:16,461 - SDKLogger - INFO - Initiating C2B payment...
+2025-03-04 16:27:16,463 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/v1/c2b-register-url/register?apikey=F4cAy9WimsSDGg3IrGnxH0pjP5fMIaKSHhLksrQeNS0FBMP0 with params: {'json': {'ShortCode': '60023', 'ResponseType': 'Completed', 'CommandID': 'RegisterURL', 'ConfirmationURL': 'https://www.myservice:8080/confirmation', 'ValidationURL': 'https://www.myservice:8080/validation'}, 'headers': {'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:27:17,152 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:27:17,153 - SDKLogger - INFO - Response Content: 
+            {"header":{"responseCode":400,"responseMessage":"Shortcode already registered","customerMessage":"Shortcode already registered","timestamp":"2025-03-04T16:27:18.091"}}
+        
+2025-03-04 16:27:17,155 - SDKLogger - INFO - C2B payment initiated successfully.
+2025-03-04 16:29:56,229 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:29:56,684 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:29:57,095 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:29:57,096 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "FM0frmIyvJlKRvZ2EIE5ad65AwjZ",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:30:27,646 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:30:28,045 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:30:28,492 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:30:28,493 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "uDTg7qtlGewBGjCqGJMdGsGXXWen",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:32:21,487 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:32:22,286 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:32:23,431 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:32:23,431 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "f7RX57qCY7aO42tM03T6QI17MzQn",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:32:49,132 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:32:49,814 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:32:50,249 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:32:50,250 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "2K8J14NrcRWOCAkU1N30EytxBVOq",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:33:51,846 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:33:51,848 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:33:53,027 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:33:53,027 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "8LtwN3Fgg4p4lLsHv8Ka6btTOkXo",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:34:39,038 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:34:39,040 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:34:39,450 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:34:39,451 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "ANZuzbjIuZ7fmuPyaAAchXZxVJGp",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:35:19,060 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:35:19,063 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:35:19,463 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:35:19,463 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "0S14yDUqVA9dUHGbpSta7jF7i6Bh",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:36:30,349 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:36:30,351 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:36:30,786 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:36:30,787 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "ZjpMBm8YlcxtM3238M8aLR55Fyw6",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:41:00,365 - SDKLogger - INFO - Requesting access token...
+2025-03-04 16:41:00,367 - SDKLogger - INFO - Making GET request to https://apisandbox.safaricom.et/v1/token/generate?grant_type=client_credentials with params: {'headers': {'Authorization': 'Basic RjRjQXk5V2ltc1NER2czSXJHbnhIMHBqUDVmTUlhS1NIaExrc3JRZU5TMEZCTVAwOkFBb0dUUjhzZVgzdXpmQTNnSHJ3Z3czQ1AydkliTlBpMGVPVXFYYWtmQm5sNkoyUjNDZDNTY3pET2pjQ1loeXo', 'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:41:00,787 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:41:00,788 - SDKLogger - INFO - Response Content: 
+			{
+              "access_token": "8elSDbPsv4gO1VY1OmGCONawjcmZ",
+              "token_type": "Bearer",
+              "expires_in" : "3599"
+  			}
+		
+2025-03-04 16:52:41,348 - SDKLogger - INFO - Initiating C2B payment...
+2025-03-04 16:52:41,607 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/v1/c2b-register-url/register?apikey=F4cAy9WimsSDGg3IrGnxH0pjP5fMIaKSHhLksrQeNS0FBMP0 with params: {'json': {'ShortCode': '60023', 'ResponseType': 'Completed', 'CommandID': 'RegisterURL', 'ConfirmationURL': 'https://www.myservice:8080/confirmation', 'ValidationURL': 'https://www.myservice:8080/validation'}, 'headers': {'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:52:43,307 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:52:43,307 - SDKLogger - INFO - Response Content: 
+            {"header":{"responseCode":400,"responseMessage":"Shortcode already registered","customerMessage":"Shortcode already registered","timestamp":"2025-03-04T16:52:44.250"}}
+        
+2025-03-04 16:52:45,427 - SDKLogger - INFO - C2B payment initiated successfully.
+2025-03-04 16:52:53,948 - SDKLogger - INFO - Initiating C2B payment...
+2025-03-04 16:52:54,331 - SDKLogger - INFO - Making POST request to https://apisandbox.safaricom.et/v1/c2b-register-url/register?apikey=F4cAy9WimsSDGg3IrGnxH0pjP5fMIaKSHhLksrQeNS0FBMP0 with params: {'json': {'ShortCode': '60023', 'ResponseType': 'Completed', 'CommandID': 'RegisterURL', 'ConfirmationURL': 'https://www.myservice:8080/confirmation', 'ValidationURL': 'https://www.myservice:8080/validation'}, 'headers': {'Accept': 'application/json', 'Content-Type': 'application/json'}}
+2025-03-04 16:52:55,293 - SDKLogger - INFO - Response Status Code: 200
+2025-03-04 16:52:55,294 - SDKLogger - INFO - Response Content: 
+            {"header":{"responseCode":400,"responseMessage":"Shortcode already registered","customerMessage":"Shortcode already registered","timestamp":"2025-03-04T16:52:56.235"}}
+        
